@@ -31,12 +31,12 @@ var input = document.querySelector('#search');
 input.addEventListener(
     'keyup',
     (e) => {
-              if(e.target.value != "" ){
-                latest(SEARCHAPI + e.target.value);
-              } else {
-                latest(APIURL)
-              }
+        if (e.target.value != "") {
+            latest(SEARCHAPI + e.target.value);
+        } else {
+            latest(APIURL)
+        }
     }
 )
-    
+
 latest(APIURL);
